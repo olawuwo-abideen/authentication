@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+
+<div class="container">
+    <form action="/register" method="POST">
+        <!-- <div class="login"> -->
+            <h3>Register Page</h3>
+            <label for="email"><b>Email</b></label>
+           
+            <input type="text" placeholder="Enter Email" name="username" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <button type="submit">Register</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+        </div>
+    </form>
+</div>
+
+
+
+<%- include('partials/header') %>
