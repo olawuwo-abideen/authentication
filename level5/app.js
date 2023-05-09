@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(session({
-  secret: "My save password.",
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: false
 }));
