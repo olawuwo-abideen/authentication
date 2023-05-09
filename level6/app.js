@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(session({
-  secret: "My Strong Password.",
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: false
 }));
